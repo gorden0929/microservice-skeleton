@@ -21,9 +21,11 @@ This is a skeleton for a microservice using Express.
 
 ### Clone the skeleton repository
 ```
-git clone https://github.com/gorden0929/microservice-skeleton.git
+git clone https://github.com/gorden0929/microservice-skeleton.git <new_name>
 cd microservice-skeleton
 ```
+
+### Go to [Github](https://github.com/) and create a new empty repository
 
 ### Change git remote origin
 ```
