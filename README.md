@@ -21,8 +21,8 @@ This is a skeleton for a microservice using Express.
 
 ### Clone the skeleton repository
 ```
-git clone https://github.com/gorden0929/microservice-skeleton.git <new_name>
-cd microservice-skeleton
+git clone --depth 1 https://github.com/gorden0929/microservice-skeleton.git <new_name>
+cd <new_name>
 ```
 
 ### Go to [Github](https://github.com/) and create a new empty repository
@@ -31,18 +31,6 @@ cd microservice-skeleton
 ```
 git remote remove origin
 git remote add origin https://github.com/<username/organization>/<repository_name>.git
-```
-
-### checkout without previous history
-```
-git checkout --orphan main
-```
-
-### add and commit existing file
-
-```
-git add .
-git commit -m "Initial commit"
 ```
 
 ### push to remote
