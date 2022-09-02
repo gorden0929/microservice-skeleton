@@ -3,6 +3,9 @@ import cors from 'cors';
 import { v1 } from './v1';
 import 'dotenv/config';
 import { authenticate } from './middlewares/authenticate';
+import * as admin from 'firebase-admin';
+
+admin.initializeApp();
 
 const app = express();
 
