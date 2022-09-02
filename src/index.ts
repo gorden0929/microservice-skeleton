@@ -6,7 +6,6 @@ import { authenticate } from './middlewares/authenticate';
 import * as admin from 'firebase-admin';
 
 admin.initializeApp();
-
 const app = express();
 
 app.use(cors({ origin: true }));

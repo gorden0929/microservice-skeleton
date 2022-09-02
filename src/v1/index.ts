@@ -35,6 +35,7 @@ router.post('/', async (req, res) => {
   try {
     res.status(200).send({ message: 'success', status: 'success', data: body });
   } catch (error: any) {
+    console.error(error);
     res.status(500).send({ message: error.message, status: 'error', data: error });
   }
 });
@@ -45,6 +46,7 @@ router.get('/:id', async (req, res) => {
   try {
     res.status(200).send({ message: 'success', status: 'success', data: { id: id } });
   } catch (error: any) {
+    console.error(error);
     res.status(500).send({ message: error.message, status: 'error', data: error });
   }
 });
@@ -55,6 +57,7 @@ router.post('/get_by', async (req, res) => {
   try {
     res.status(200).send({ message: 'success', status: 'success', data: body });
   } catch (error: any) {
+    console.error(error);
     res.status(500).send({ message: error.message, status: 'error', data: error });
   }
 });
@@ -65,6 +68,7 @@ router.put('/', async (req, res) => {
   try {
     res.status(200).send({ message: 'success', status: 'success', data: body });
   } catch (error: any) {
+    console.error(error);
     res.status(500).send({ message: error.message, status: 'error', data: error });
   }
 });
@@ -75,6 +79,7 @@ router.delete('/:id', async (req, res) => {
   try {
     res.status(200).send({ message: 'success', status: 'success', data: { id: id } });
   } catch (error: any) {
+    console.error(error);
     res.status(500).send({ message: error.message, status: 'error', data: error });
   }
 });
