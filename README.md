@@ -28,17 +28,22 @@ cd <new_name>
 
 ### Go to [Github](https://github.com/) and create a new empty repository
 
-### Change git remote origin
+### Delete .git
 
 ```
-git remote remove origin
-git remote add origin https://github.com/<username/organization>/<repository_name>.git
+del .git
 ```
 
-### push to remote
+### rename package.json name and deploy script
+
+### Push to new repository
 
 ```
-git push -u origin main
+git init
+git add .
+git commit -m "first commit"
+git remote add origin <new_repo_url>
+git push -u origin master
 ```
 
 ## How to use
