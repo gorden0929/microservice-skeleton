@@ -29,7 +29,7 @@ export const authenticate = () => async (req: Request, res: Response, next: Next
       //   throw new Error('Token not for this project');
       // }
       // iss must be https://securetoken.google.com/<projectId>
-      if (jwtPayload.iss !== `https://accounts.google.com`) {
+      if (jwtPayload.iss !== 'https://accounts.google.com') {
         throw new Error('Token not for this project');
       }
       // if (!jwtPayload.sub) {
@@ -41,5 +41,4 @@ export const authenticate = () => async (req: Request, res: Response, next: Next
     console.error(error);
     res.status(401).send({ message: error.message, status: 'error', data: error });
   }
-
-}
+};

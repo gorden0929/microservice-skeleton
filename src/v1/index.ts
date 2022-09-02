@@ -1,6 +1,6 @@
-import express from 'express';
+import { Router } from 'express';
 
-const router = express.Router();
+const router = Router();
 
 // sample calling other services
 // import { GoogleAuth } from 'google-auth-library';
